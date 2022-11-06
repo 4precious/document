@@ -1,0 +1,374 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{kotex}
+\usepackage{wrapfig}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{float}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{The affection ON-tact conversation application of children and parents – My precious\\
+{\footnotesize Four Precious}
+}
+
+\author{\IEEEauthorblockN{Kim Seohyun 2020028259}
+\IEEEauthorblockA{\textit{College of engineering} \\
+\textit{Hanyang University}\\
+Seoul, Korea \\
+hyununseo@hanyang.ac.kr}
+\and
+\IEEEauthorblockN{Kim Hyunji 2020088222}
+\IEEEauthorblockA{\textit{College of engineering} \\
+\textit{Hanyang University}\\
+Seoul, Korea \\
+hyunjikim1218@gmail.com}
+\and
+\IEEEauthorblockN{Park Jiwon 2020020255}
+\IEEEauthorblockA{\textit{College of engineering} \\
+\textit{Hanyang University}\\
+Seoul, Korea \\
+park@jiwon.me}
+\and
+\IEEEauthorblockN{Lee Subin 2020000819}
+\IEEEauthorblockA{\textit{College of engineering} \\
+\textit{Hanyang University}\\
+Seoul, Korea \\
+supiao0123@gmail.com}
+}
+
+\maketitle
+
+\begin{abstract}
+  Today, conflicts with children are often intensified especially after puberty due to lack of conversation and communication between parents and children. The child wants to talk to the parents, but the parents are busy or have no time to face each other, so they gradually stop talking, and as this process is repeated, the conversation becomes difficult and the conversations dried up. As on-tact communication, which means meeting online, is now common, we planned this project to help parents communicate between parents and children by conveniently managing their children's schedules through applications and paying attention to their thoughts and feelings.
+\end{abstract}
+
+\subsection{Role Assignment}
+
+\begin{table}[htbp]
+  \begin{center}
+  \begin{tabular}{|l|l|}
+  \hline
+  \textbf{Roles} & \textbf{Name} \\ \hline
+  User, Customer & \makecell{Park Jiwon, Kim Hyunji} \\ \hline
+  Software developer & Lee Subin \\ \hline
+  Development manager & Kim Seohyun \\ \hline
+  \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{enumerate}
+  \item \textbf{User, Customer} \\
+  Main user and customer of our application will be the parent and child. Therefore, we should be well known about parent, and especially child. \\
+  User and customer have to think about arrangement of pages and accessibility of features in order to create a positive user experience.
+  \item \textbf{Software developer} \\
+  Software developer examine the possibility of technical realization of the software. In addition, the important role of software developer is to think carefully about the development tool which is appropriate for our application.
+  \item \textbf{Development manager} \\
+  Development manager’s main role is to look at our software from various perspectives. Especially, development manager should take care of customer’s convenience and give some feedbacks to software developer.
+\end{enumerate}
+
+\section{Introduction}
+
+\subsection{Motivation}
+
+We focused on the psychology of adolescents before forming their identity and created this ON-Tact conversation application that solves the disconnection of family conversation and forms an attachment between parents and children. In the past, family usually had a conversation during their meals when they gathered. However, as the number of double income family increases today, the time for family members to eat together is decreasing. And it is increasingly difficult to even see each other due to frequent overtime work. Since children also go to several academies, the time family members spend together is less than before. In addition to the lack of family time, there are many factors that interfere with family conversations such as watching TV or using smartphones, even if families are gathered at home. Parents and children become harder and harder to understand each other, and the conversation becomes disconnected. Therefore, the function of the home gradually faded from the space that gives stability and rest to the space where just sleeping and eating. In fact, a recent survey of teenagers showed that the average of conversation time between their family members was only about 13 minutes a day. It also showed the reason why children do not talk is that parents have a lack of empathy and understanding of them. Therefore, it is most important to share daily life and develop understanding in order to solve the disconnection of family conversation. According to a research paper, this process is especially important in the lower grades of elementary school when a child enters school. This period is also meaningful for children because it is a time when they grow out of their infancy and enter the school which allows them to start a social life. Parents are most interested in their children's school adaptation problems and academic problems during this period. The lower grades of elementary school are the most direct and honest parent-child conversation takes place. It is necessary to form a bond of sympathy at this time so that a desirable relationship with the parent-child can be maintained even when the child goes through puberty. This application can help parents-children communicate better with children who develop identity before puberty. First, when a parent registers question based on children's daily lives, children answer the question and share their daily life. Parents better understand the child's situation through these answers and communicate with the child by asking additional questions based on previous answer. The child realizes that his parents have great interest and affection for him through parents' questions. Since these interactions are not restricted in time and space, deep and warm conversations are possible even when it is difficult to see each other's faces. This application also uses AI to analyze the child's answer and report child’s current feelings to their parents. Based on these results, parents can be educated in childcare solutions if they want. This is done in the form of an audio solution suitable for the child's current situation through an AI speaker. Furthermore, this application also provides a service that makes it easy to manage a child's fixed schedule for parents who cannot check their child's current situation one by one due to their busy schedule. When the child informs the AI speaker of the completion of his schedule, the application for parent user automatically displays whether the child has completed his schedule. Therefore, parents can easily check the child's current schedule and condition through the application without the hassle of asking the child.  It is also much easier for a child to inform an AI speaker than to report his schedule to parents. This application also allows parents to choose whether to link with LG Styler when registering their child's fixed schedule. It helps users to automatically set clothes which fit their schedules. We created this application with a focus on providing a system that allows parents-children to communicate well and parents easily manage their children.
+
+\subsection{Problem Statement}
+
+\begin{enumerate}
+  \item If communication between parents and children is insufficient during the lower grades of elementary school, the conflict between both sides intensifies after puberty. At this time, children often do not tell their parents about their work or friends' problems at school, and even if there are serious problems to be solved, they often do not. In this case, parents may misunderstand their children because they are not familiar with stress or problems at school, and the conflict with their children becomes deeper.
+  
+  \item In particular, the majority of students who caused problems such as school violence were seriously experiencing family conflict, and most of them had little time to talk to their parents.
+  
+  \item According to a survey of teenagers on the average daily conversation time between families, 50.8\% said their conversation time was less than 30 minutes. 
+  
+  \item The biggest reason why teenagers don't talk to their parents is that they don't have the source of primary interaction to share. It occurs because it is difficult to form a consensus due to lack of communication. It is also said that children feel disappointed with their parents when they feel that parents have little interest and affection for them.
+
+  \item Parents who are not educated with childcare solutions can communicate poorly, contrary to their intentions. They are not coached for accurate solutions that are appropriate for their children's concerns and try to talk with their children recklessly. Therefore, the conflict between parents and children intensifies.
+  
+  \item According to survey, the proportion of dual-income families continues to increase. In 2020, dual-income households account for 45.4\% of all households. And the problem with this situation is the lack time to talk with families.
+  
+  \item In addition, the number of children receiving private education is significantly increasing. Therefore not only parents but also children lack time to talk to their families.
+  
+  \item The process of a child reporting their current schedule to his parents using a messenger application or phone call is cumbersome. Parents who have to ask and check their children one by one are also troublesome.
+\end{enumerate}
+
+\subsection{Research on any related software}
+
+\subsubsection{Question Diary}
+
+The application provides users with new questions every day, allowing them to write their own answers. It is up to the user whether or not to respond at this time. Then, a year later, the user is asked the same question and can compare past and present answers. Sign up for a membership via email and a custom password. It is similar to the app our team envisions in that users receive and answer one question a day. However, in this app, the developer provides random questions to the user, and the app we designed differs in that the parent (user) asks the child (user) a customized question.
+
+\subsubsection{Treena}
+
+This is an application that analyzes emotions based on the user's diary. You can sign up for a membership via email and a custom password. The user records the daily routine centering on his or her emotional change and obtains the emotion analysis result. In addition, this application provides users with warm comments and images suitable for the results of the sentimental analysis. And through the tree UI that grows the more the user writes in the diary, the user can feel fun and proud.
+
+\subsubsection{Todo mate}
+
+This is a scheduling application that supports both mobile, PC, and Apple Watch. You can sign up for a membership via email and a custom password. If you register as a member, you can log in using other devices and use the application with other users. Users can easily manage their to-dos by adding their own schedules and goals and keeping a diary looking back on the day. Also, this application has the ability to follow other users. Users can empathize by sending emojis to the diaries of other users they follow, or by clicking the Like button. Likewise, you can receive support for your goals from other users and sympathize with your diary. The schedule management function of this application can be registered as a widget. Therefore, you can easily check schedules and display completed schedules on the home screen and lock screen. In addition, the mobile notification function notifies the user so as not to forget the schedule at specified times.
+
+\subsubsection{Kakaotalk}
+
+It is one of the most popular chat applications that support both mobile and PC. Users can easily sign up for this app through phone verification. Users can send and receive messages with other registered users and can send and receive messages with multiple users at the same time using group chat. Users can send and receive photos and videos as well as text on the chat screen, and even send gifts and money. It is also possible to make calls between multiple users. Through the profile function, you can share your daily life and status, and you can also check the daily life of other users.
+
+\subsubsection{Line}
+
+Users can sign up for the app through mobile phone authentication or Facebook integration. Line is a messenger that offers free messages and free calls. The route is available in 52 countries, including Japan, Thailand, Taiwan, and Spain. Users can enjoy free international calls and can use the payment system that is easy to use overseas. Domestic Line account users can register cards that can be used abroad. The card registration is configured so that the user can register the card once in consideration of the user's convenience. The LINE app also supports free chat, free voice \& video calls, and mobile chat with a PC.
+
+\subsubsection{Google Calendar}
+
+This application is similar to the service we planned in that it notifies the user of the schedule in conjunction with the AI speaker. You can easily sign up for membership through your Google account. In addition, various functions of this application can be used by linking with Google's services. Users can check schedules through various calendar views, and register new schedules and their own goals. In addition, Google Workspace allows users to register and manage common schedules with team members, rather than their own. When a user registers a meeting schedule, a simple video conference with other users may be conducted.
+
+\section{requirement analysis}
+
+\subsection{Provide Tutorial}
+\begin{enumerate}
+  \item Launch the app for the first time \\
+    When the app is first launched, it informs the user of how to use the app through the tutorial images which can be skipped. This image introduces the location and usage of the app's pages: My Page, Questions and Answers, Schedule Management Page, and features: Register, Change and Delete Profile Image, Register and Delete Nickname, Check User Information, Register Schedule and Delete Schedule List, Register and Delete Questions, Register and Delete Answers, Review today's Keywords and Solutions. At the end of the tutorial page, a user will go to the login and membership page so that they can sign up or log in.
+  
+\end{enumerate}
+
+\subsection{Sign-up for application separately (children / parent)}
+
+\begin{enumerate}
+  \item When registering as a member, both kind of user needs to enter a nickname, ID, password, etc.
+  
+  \item When registering user, we have to identify whether the user is a parent or a child through the option to check and save the information about it. According to this data, the child user view and the parent user view are shown differently when user logs in to the app. In the child-user view, user can check and complete a fixed schedule without access to register and delete it, write answers to parent’s question, view child’s own emotional analysis results, and view the sentence that sympathizes with child's own emotion. On the other hand, in the parent-user view, there are functions of registering and managing a fixed schedule of the child, leaving a question to child, viewing child's emotional analysis results, and getting solutions related to child’s emotion.
+\end{enumerate}
+
+\subsection{Log-in}
+
+User can log in by entering his or her ID and password in the application. After successfully completing the login and confirming that he or she is a registered user, there’s a procedure to check if the user is a parent or a child. After completing all the verification, a suitable view (parent-user view/child-user view) for the user is set and the user is moved to the main page.
+
+\subsection{My Page}
+
+Both parent and child users can check their information including profile image, nickname, status information (parent or child) on My Page. In addition, registration, modification, and deletion of profile images and nicknames are also possible. However, the status information (parent-user or child-user) cannot be changed.
+
+\subsection{Question \& Answer}
+
+Question \& Answer between parents and child utilizes the format of chat. On the Q\&A page, parents press the ‘Create Question’ button to leave questions asking about their child in the parent-user view. In the child-user view, after reading the parents' questions, the child can write an answer on the app about what happened all day long, as if writing a diary. In order to differentiate our application from other messenger apps, the app conducts an emotional analysis of the child's answers and provides solutions to parents regarding to keywords came from answers.
+
+\begin{enumerate}
+  \item An emotional analysis - When a child leaves an answer on the Q\&A page and submits the answer by pressing the "Done" button, the app conducts an emotional analysis using the one of kinds of artificial intelligence, ‘Natural Language Processing’ field. The results of emotional analysis on the child's answer can be found on the Q\&A page for both parent-user and children-user. After the analysis results are shown to the child, text that sympathizes with the emotion of child that account for the highest percentage of the analysis results is also shown to the child-user. It also shows parents the answers left by the child and the results of emotional analysis. In addition, after reading both the child's answers and emotion analysis results, parents can set appropriate keywords (or categories) that imply the child's emotions and situations to receive audiobook solutions through AI speakers and apps (e.g. situations where compliments are needed, situations where friendship problems are concerned). The scope of these keywords depends on the child's emotional analysis results. Keywords are come from related terms of emotional analysis result. Parents can also add another keywords if there are no appropriate ones.
+  \begin{enumerate}
+    \item Parent-User: When a parent user clicks the Today's question on the main page, it goes to the Q\&A page. On this page, the parent user can create, modify, and delete questions, and if the child's answer is on it, the answer can be checked. By pressing the ‘emotion analysis’ button, it shows the proportion of emotions (joy, sadness, anger, etc.) determined by AI in the child's answers, and parent users can set keywords related to the child's emotions (praise, comfort, friend relationship, academic concern, etc.) from the child’s emotion analysis results. Parents can choose their child's keyword and click the Browse Solution button to find a customized solution that can be checked with AI speakers and apps.
+    \item Child-user: Click on the question box of the day shown on the child user's main page to go to the Q\&A page. The child user can check the question of the day on the page, but it is not possible to create, modify, or delete the question. Child-user can write his or her answers to today's questions in the box where child-user writes his or her answers to the questions.
+  \end{enumerate}
+\end{enumerate}
+
+\subsection{Provide child-care solutions for parent}
+
+Parents who read the child's emotional analysis results and set a category for the child's current situation may feel at a confusion about what to do for their child. Therefore, on the parent solution page, parent can access audiobooks or related article materials containing stories that recommends parents how to cope with problems or situations related to their child's today’s keywords. Audio books and related materials can be accessed through AI speakers and the application. For example, in the application, if a parent sets the child's current situation category as "friend relationship concern" and clicks the ‘Browse solution’ button, the list of audiobooks which are related to the keyword "friend relationship" can be checked and the appropriate audiobook can be played through AI speakers. It is also possible to play the audiobook directly from the app's parent solution page. In addition, parent-user can check out a list of helpful articles on the parent solution page. Through these materials, parents can later organize their thoughts and build a bond by talking directly with their children.
+
+\subsection{Manage child’s fixed schedule}
+
+\begin{enumerate}
+  \item Parent can register and manage a child's fixed schedule on the schedule management page of the parent user view. In this page, parents register their child's fixed schedule like ‘school schedule’ and ‘academy schedule’ on the app. When child's utterance such as "I went to school" and "I went to academy" is confirmed through the AI speaker, the check box of the schedule is automatically checked in the application. Child can mark the completion of the schedule not only through the speaker but also through the app. The advantage is that parents can easily check child’s fixed schedule through the app without having to call or contact their children one by one regarding the fixed schedule that is repeated every day.
+  \begin{enumerate}
+    \item Parent user: When a parent user enters the fixed schedule detail page, parent can see today's list of fixed child schedules at a glance. On this page, the parent user can create, modify, and delete a fixed schedule.
+    \item Child user: When the child user enters the schedule management page, the progress of the fixed schedule can be checked. Unlike the schedule management page seen in the parent user view, child users cannot create, modify, or delete their fixed schedules.
+  \end{enumerate}
+  \item (Home appliance part) – Association with Styler: With regard to the child's fixed schedule, parents can choose whether to interwork with the Styler. If parent register the styler to the child’s fixed schedule, parent can easily use it by setting the appropriate styling of the clothes you need in advance the day before the child’s fixed schedule
+\end{enumerate}
+
+\section{Development Environment}
+
+\subsection{Choice of software development platform}
+\begin{enumerate}
+    \item development platform
+    \begin{enumerate}
+        \item Windows 10:
+        Windows 10 is personal computer’s operating system of Microsoft. It is the last version of Windows that supports Internet Explorer, 32-bit operating systems and legacy BIOS.
+        \item ios 16 \& up:
+        Among various application environments, iOS, an Operating System made for the iPhone, is used. It uses a multi-touch interface where simple actions are used to manipulate the device. Such as swipe across the screen to move to the next page or pick up and zoom in the finger.
+        \item macOS Ventura:
+        the latest version of macOS. macOS is an operating system developed by Apple Inc. It is a UNIX-based operating system. It was developed for the Macintosh computer, and it is the primary operating system for Apple's Mac computers. macOS is a proprietary operating system, and it is not distributed as an open source.
+        \item Linux:
+        an operating system based on the UNIX operating system. It is an OS that supports multiple users, multi-tasking, and multi-threads and is optimized to operate as a server, as UNIX did. Linux has been distributed as an open source, and there are numerous versions of Linux that have been modified at the convenience of the company or individual. One of typical examples is Ubuntu OS distributed by a Canonical company.
+        \item Amazon Elastic Compute Cloud (Amazon EC2):
+        Amazon EC2 provides scalable computing capacity in the Amazon Web Services (AWS) Cloud. It offers users the ability to run applications on the public cloud, build apps to automate scaling, etc.
+    \end{enumerate}
+    \item Language / Framework
+    \begin{enumerate}
+        \item Python / Django:
+        Python is an interpreter language that does not require compilation and is easy to modify code. In other words, the convenience of development is very high. It also features that architectural design is very important. \hfill \break
+        Django is a Python-based web framework. Therefore, it performs all possible actions on Python, and there are many powerful libraries. Basic functions such as log-in and signing up for membership have already been created in Django, so we can implement it simply using the library.
+        \item Typescript / React Native: 
+        Typescript is the superset of the ECMA script. ECMA script, which known as 'JavaScript', is a type-free language so that has some problems about using types. Microsoft solved this problem by develop the Typescript. Typescript can give some types for variables or functions, so that it can prevent some errors. But common web browsers do not support Typescript, so we use transpiler to convert Typescript to JavaScript. \hfill \break
+        React Native is a JavaScript framework that allows to create native mobile applications and satisfies the conditions for supporting both Android and iOS operating systems. The reason for using this framework is that the expected users is a household unit (parents and child). Since it is rendering at the client-side, frontend developers can easily and actively develop. It also uses the target platform's standard rendering API. In addition, the application's performance is very fast because React Native runs separately from the main UI thread. Reuse of code and knowledge sharing can significantly reduce resources when developing mobile apps.
+        \item SQL:
+        SQL stands for Structured Query Language. It is used to communicate with data within a database management system. SQL was used in order to store, retrieve, manage and manipulate data: users’ information, contents of questions and answers, etc.
+    \end{enumerate}
+    \item Software
+    
+    \begin{enumerate}
+        \item Visual Studio Code:
+        This is widely used as a text editor developed by Microsoft. It supports syntax coloring according to its own language and terminal function. Also, the biggest feature is the wide variety of extensions. Therefore, it is scalable beyond simple editors to IDE levels. We will use visual studio code extensions related to Javascript, React Native, Django and so on.
+        \item Git \& GitHub:
+        Git is one of the version control systems. It was developed by Linus Torbals for the development of Linux. It is free and open source, so many commercial and non-commercial projects use Git to manage their projects. The unit of management in Git is not a file, but a repository, which is the top folder, and records the changes in the repository and manages the version of the project. \hfill \break
+        GitHub is a hosting service that allows you to upload such Git projects, allowing developers far away to collaborate with each other.
+        \item Notion:
+        Notion is not a simple note app, but a record tool that is closer to a comprehensive work collaboration tool, which is suitable for developers to use. Notion provides various functions such as notes, to-do lists, calendars, wikis, blogs, project management, file management, etc. In addition, Notion can be integrated with other tools. Notion can be used for free, and if you use it for a fee, you can provide more features.
+        \item MySQL Workbench:
+        MySQL Workbench is a unified visual tool for database architects, developers, and DBAs. It provides data modeling, SQL development, etc. Additionally, it provides a tool for ERD (Entity Relationship Diagram).
+        \item NUGU playbuilder:
+        NUGU playbuilder is a tool that helps developing service that executes in NUGU speaker. It enables machine learning by setting indent and entity inside conversation, actions on conversation and expected conversation during the development. Since every procedure of service is in GUI, developers who are not used to AI development can easily work on the service.
+        \item Tensorflow:
+        Tensorflow is an open source software library, which is used for AI and deep learning. Artificial Intelligence can be developed easily using tensorflow in Python development environment. In our team project, we will perform natural language processing(NLP) using tensorflow.
+    \end{enumerate}
+    \end{enumerate}
+    
+\subsection{Software in Use}
+    \begin{enumerate}
+        \item Question diary:
+        The app provides users with new questions every day, allowing them to create their answers. It is up to you to respond at this point. Then, a year later, users will be asked the same question and compare past and present answers. Sign up with your email address and a custom password. It is similar to the app our team expects in that users receive and respond to one question per day. However, in this app, the developer randomly asks the user questions, which is probably not the app we designed. A parent (user) asks a child (user) a customized question.
+        \item Sumone:
+        "Sumone" is a smartphone application that allows couples to exchange questions and answers on a daily basis. Once a day, at a set time, one question arrives at the couple in a set order. Both people are given the same question, and they each write their own answer to the question. At this time, I can only check the other person's answer when I write the answer, and the same for the other. In the sign-up process, when an ID is created and an invitation is sent to the other party, the other party joins the application through the invitation and the two people go through the process of connecting with each other. It is convenient because someone can sign up through KakaoTalk. After you write each other's answers to the question, you can comment on each question, so you can share each other's opinions and leave memories.
+    \end{enumerate}
+\subsection{Cost}
+aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
+
+\section{specifications}
+
+\subsection{Login}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{login_img.png}
+    \end{figure}
+    User must type his or her email address and corresponding password which were registered at sign up process. If email address or password is invalid, alert message informs user that wrong information has entered. This message is shown in space below the password input box. For a user who did not register yet, there is a button that enables him or her to go to the sign in page.
+    
+\subsection{Sign up}
+    \begin{enumerate}
+    \item Select user type: When user clicks register button, user should select his or her member type: parent-user or child-user. By selecting a type and clicking next button, user can proceed register process in next step.
+    \item Enter information: In this page, both parent-user and child-user must enter six information: name, birth date, gender, email address and password. In case of child-user, there is another input box: parent ID. This information is required to connect the parent-user and his or her child-user. When user finished to enter all the information, complete registering button is activated and user can finish the registration.
+    \end{enumerate}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{sign_up_1.png}
+    \includegraphics[scale=0.3]{sign_up_2.png}
+    \end{figure}
+    
+    \subsection{Parent view}
+    \begin{enumerate}
+    \item Main page \hfill \break
+            This is the first page that the parent user will face after the login is successful. First, the user can see their child character icon in the middle of the screen. Next, slide the child icon to the side, the card component that contain the child’s schedule for today appears. And there is a word of guidance under these components. At the top, there is the logo of this application and two buttons: calendar-shaped button and my page button. Users can move to different pages by pressing these buttons.
+            \begin{enumerate}
+                \item Child icon:
+                It intuitively informs parents of the child's feelings of today through the change in the expression of the child icon. However, if the child has not registered an answer yet, the child icon is set to a absence of expression. This is the same when the parent doesn’t register the question. This absence of expression is the default value, and when the child registers an answer, the expression of the icon changes according to the sentimental analysis of their answer. AI sentimental analysis is conducted based on the child's answer to reflect the child's emotion on the icon. Therefore, parents can easily realize the child's overall feelings through these changes. When a parent user clicks this icon, They can go to the daily Q\&A page.
+                \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{parent_main.png}
+                 \end{figure}
+                
+                \item Daily schedule:
+                It informs parents user the child's daily schedule and notify whether it has been completed or not. The child's schedule for today is written in order, and user can know whether it is completed by check box. At this time, the parent user cannot select the checkbox. Parents can only see the schedule state and modify the weekly schedule information in schedule managing page. It depends on children user. When a child user informs the AI speaker his schedule state or select the checkbox directly in the application, parents user can check it in real time. \hfill \break
+                By clicking the Schedule component on the main page, the user can go to the schedule managing page. In this page, they can check, register, and modify the schedule information for each child.
+                \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{parent_today_schedule.png}
+                 \end{figure}
+                \item Instructions:
+                Instructions guides the user action to be taken now. If a parent user has not registered today's question to the child, "Please register today's question" is set as a instruction. If they already have registered the question but the child has not yet answered it, "Answer has not yet been registered" is then set as a instruction. Finally, if the child registers an answer and the parent needs to check it, "Child answer is complete. Please check the solution" is set as a instructions. In this way, the instructions help guide the next behavior of the parent user.
+                \item Calendar button:
+                The calendar button is located in the upper right corner of the main page. If the user clicks this button, they can go to the monthly child sentiment analysis page. This page allows user to view a child's emotional report in a monthly calendar view.
+                \item My page button:
+                This button is also located in the upper right corner of the main page. When the user clicks this button, they can go to My Page. This page helps user configuration. User can modify the password and check whether their application is linked to the child user.
+            \end{enumerate}
+            
+            
+            
+            \item Q\&A \hfill \break
+            In the main page in parent-user view, user can move to Q\&A page by clicking the child icon. On this page, parents can leave questions for the child and check the child's answer to the question.
+            
+            \begin{enumerate}
+                \item Question-Answer: If the parent view is in the initial state of not leaving any question for the child, a notice appears at the top of the screen asking for the parents to leave a question. If the parent-user clicks the pencil icon at the top right corner, the slide menu where he or she can create new question or modify the contents of questions that have already entered is activated. Modifying the content of existing question is possible only if the child has not yet entered to parent's answer. If the user clicks check button on the slide, modified/newly added text entered by the parent is stored. Afterwards, if the child leaves an answer to the question, the parent can check the child's answer directly below the question he or she left.
+                 \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{parent_q&a_1.png}
+                 \includegraphics[scale=0.3]{parent_q&a_2.png}
+                 \end{figure}
+                \item Sentimental analysis:
+                After the child leaves an answer, a window appears immediately below the answer as a result of sentimental analysis of the child's answer. Sentiment analysis is conducted through artificial intelligence Natural Language Processing. This allows parents to identify the percentage of their child's emotions (ex – 30\% for joy, 70\% for sadness). In addition, about the result of sentimental analysis, the emotion that accounts for the highest proportion is set as the child's representative emotion, and is reflected to the monthly child sentiment analysis page and "child" icon on the main page.
+                \item Child's Keywords / Solution Keywords: At the bottom of this page, 'Child's keywords' and 'Solution keywords' related to the child's answer are arranged. Child's keywords can be checked by parents in the form of hashtags. Keywords are extracted based on frequently mentioned words from the entire text of the child's answer. Solution keywords are provided by category related to the child's worries, such as academic problems or friendship. when a parent-user clicks each solution keyword, user moves to the solution page. \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{parent_sentiment_analysis.png}
+                 \end{figure}
+            \end{enumerate}
+            \item Monthly Child Sentiment Analysis Page \hfill \break
+            This page can be checked by both parents and child users. Based on the child's sentiment analysis results, the highest percentage of emotion is recorded as facial expression icon that is representing today's feelings. User can also comprehensively check the child's emotional changes on a monthly calendar. On a daily basis, child representative emotion appears in one column of the calendar. Therefore, both parents and child users can revive a memory while checking emotions changes from the past to the present. And when user clicks the past facial expression icon, they can go to the Q\&A page of that day. Therefore, it is possible to know the detailed reason why the child felt that way on that day.
+            \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{monthly_sentiment.png}
+                 \end{figure}
+            \item Solution page \hfill \break
+            This page is a solution page for parents. From the solution page, Parents who encounter a child's worries can get advice about parents' roles for helping their child to solve their problems.
+            \begin{enumerate}
+                \item In application:
+                Parents who check the solution keyword on the Question \& Answer page, may click the keyword to go to the solution page corresponding to each keyword. For example, if parent-user click the 'Academic Problem' solution keyword, user will move to a page where he or she can check the audio-book channel and related journals containing advice on the role of parents in relation to the child's academic concerns. In this case, the phrase 'A child's academic problem-solving solution' is placed at the top of the page as title. Below it, icons that is linked to related audio-book pages and icons that is connected to links such as related journals and articles are arranged, respectively.
+                \item AI speaker: Parent users can receive audiobook solutions through the interaction with AI speakers. In this case, user doesn't have to access the application. For example, when a user says, "Please play an audio book solution for my child's academic problem" to an AI speaker, it plays an audio book related to solution of child's academic problem.
+            \end{enumerate}
+            \item Schedule managing page \hfill \break
+            If you slide the child icon on the main page of the parent user view, you can see the child's schedule calendar for 'today'. By touching this calendar, the parents can move to the schedule managing page. When you go to this page, there is a table in the center of the screen where parents can see the child's week schedule at a glance. If the parent has not registered any schedule, there's no schedule block in the timetable. If parents want to register their child's schedule, they can click the 'plus' button in the upper right corner. Click this button to display a slide menu at the bottom for adding schedules. Parents can register their schedules through this menu. At this time, parents register the schedule by item, not by time and day. When parents complete weekly schedule registration, the schedule is also reflected not only to the timetable in schedule managing page, but also to the main page. After that, the main page guides them to their children and parents on "Today's To-Do list”
+            \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{parent_schedule_1.png}
+                 \end{figure}
+            \begin{enumerate}
+                \item Schedule block: It is easy to distinguish different schedules because each schedule item has it's own color. So, user can distinguish each schedule by the color. When a parent user clicks on a schedule block, a slide menu for modifying schedule information appears. The slide menu for modifying the schedule has the same format as the slide menu for registering schedule. If the parent user wants to delete a specific schedule block, click the trash can button at the top of the displayed slide menu. The child user cannot modify the schedule, but can check the details of the schedule when clicking on the block. In this case, the detailed information includes a schedule time, a place, and whether or not to be linked with the LG styler.
+                \item Slide menu: It appears at the bottom of the screen when the user clicks on a schedule block or 'plus' button. In this case, the slide menu does not occupy the entire screen, but it overlaps a certain portion of the schedule management page. This allows parent-user to register, modify, and delete schedules.
+                \begin{enumerate}
+                    \item When parent-user registers the child's schedule for the first time, \hfill \break
+                    User can access the slide menu for registering schedule through the plus button at the top of the fixed schedule managing page. As the first component of the slide menu, there is a text box that allows parent-user to write a name for the schedule. At the bottom, there is a time-add button. When the parent-user presses the time-add button, he or she may select the time to perform the schedule for each day of the week. Next, there is a text box for writing down the place, schedule name and time. However, the place is not the necessary input. User can skip it. But the time and name cannot be skipped. Finally, check whether the schedule requires interworking with the LG Styler. When this procedure is done, parent-user clicks the check button at the top of the slide menu to complete the schedule registration. After that, both parent-user and children-user can check the registered schedule on the timetable of the fixed-schedule managing page. But user cannot register more than one schedule for the same time zone. If user try it, a pop-up window appears informing to user that a new schedule cannot be registered because there is an existing schedule in that time zone.
+                    \item If parent-user modifies the registered schedule, \hfill \break
+                    User can access the slide menu for modifying existing schedule by clicking on the schedule block to be modified. The function works similarly to when registering a schedule. It means that slide menu for modifying schedule is almost same as one for registering schedule. The difference is that when user registers a new schedule, the empty text box will be filled, and when user modifies the registered schedule, the already filled text box will be replaced with another text content.
+                    \item If you delete a registered schedule, \hfill \break
+                    User may click the schedule block that he or she wants to delete. Then the slide menu for that schedule appears. When the user clicks on the Trash button at the top right of the slide menu, a pop-up window appears, with the phrase "Are you sure you want to delete the schedule?", and if the user clicks the OK button in the pop-up window, the schedule block disappears. This is also reflected to the weekly timetable in the fixed schedule managing page.
+                \end{enumerate}
+            \end{enumerate}
+        \end{enumerate}
+        \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{parent_schedule_2.png}
+                 \includegraphics[scale=0.3]{parent_schedule_3.png}
+                 \end{figure}
+
+        \subsection{Child view}
+        \begin{enumerate}
+            \item Main page
+            
+            \begin{enumerate}
+                \item When child-user successfully logged in, this page will firstly appear. In the today’s question section, which is shown to user first, child-user can look a question of parent. If there is no question arrived yet, icon and message appear at the page to inform user that there is no question. When there is a question registered, child-user can check it and go to answering page by clicking the button.
+                \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{child_main_1.png}
+                 \includegraphics[scale=0.3]{child_main_2.png}
+                 \end{figure}
+                \item  Child-user can access to schedule page by clicking today’s schedule button. At the schedule page, child-user can check today’s schedule as to-do list. User also can put a check mark on those, but child-user cannot create, modify, or delete the schedule. If user clicks today’s schedule section, user can see his or her schedule as a timetable format. Child-user only can see it, not add, modify, or delete it.
+                 
+                 \centering
+                 \includegraphics[scale=0.3]{child_today_schedule.png}
+                 
+            \end{enumerate}
+            \item Q\&A \hfill\break
+            In this page, child-user can register his or her answer to the question. Child-user also can check today’s question above the input box for answering.
+            \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.3]{child_answer_1.png}
+                 \includegraphics[scale=0.3]{child_answer_2.png}
+                 \end{figure}
+            \item Monthly child sentiment analysis page \hfill \break
+            If child-user clicks the calendar icon, user can see monthly sentiment analysis result. This page looks like calendar, and each box of date shows face icon which indicates that day’s result of sentiment analysis as an expression. By clicking the box, user can check that day’s sentiment analysis result.
+        \end{enumerate}
+\end{document}
+
+
+
+
