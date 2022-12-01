@@ -12,12 +12,13 @@
 \usepackage{makecell}
 \usepackage{tabularx}
 \usepackage{float}
+\usepackage{booktabs}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{The affection ON-tact conversation application of children and parents – My precious\\
-{\footnotesize Four Precious}
+\title{The Communication Channel for Children and Parents – Golden Child\\
+{\footnotesize Golden child}
 }
 
 \author{\IEEEauthorblockN{Kim Seohyun 2020028259}
@@ -166,17 +167,12 @@ Question \& Answer between parents and child utilizes the format of chat. On the
 
 \subsection{Provide child-care solutions for parent}
 
-Parents who read the child's emotional analysis results and set a category for the child's current situation may feel at a confusion about what to do for their child. Therefore, on the parent solution page, parent can access audiobooks or related article materials containing stories that recommends parents how to cope with problems or situations related to their child's today’s keywords. Audio books and related materials can be accessed through AI speakers and the application. For example, in the application, if a parent sets the child's current situation category as "friend relationship concern" and clicks the ‘Browse solution’ button, the list of audiobooks which are related to the keyword "friend relationship" can be checked and the appropriate audiobook can be played through AI speakers. It is also possible to play the audiobook directly from the app's parent solution page. In addition, parent-user can check out a list of helpful articles on the parent solution page. Through these materials, parents can later organize their thoughts and build a bond by talking directly with their children.
-
-\subsection{Manage child’s fixed schedule}
-
 \begin{enumerate}
-  \item Parent can register and manage a child's fixed schedule on the schedule management page of the parent user view. In this page, parents register their child's fixed schedule like ‘school schedule’ and ‘academy schedule’ on the app. When child's utterance such as "I went to school" and "I went to academy" is confirmed through the AI speaker, the check box of the schedule is automatically checked in the application. Child can mark the completion of the schedule not only through the speaker but also through the app. The advantage is that parents can easily check child’s fixed schedule through the app without having to call or contact their children one by one regarding the fixed schedule that is repeated every day.
-  \begin{enumerate}
-    \item Parent user: When a parent user enters the fixed schedule detail page, parent can see today's list of fixed child schedules at a glance. On this page, the parent user can create, modify, and delete a fixed schedule.
-    \item Child user: When the child user enters the schedule management page, the progress of the fixed schedule can be checked. Unlike the schedule management page seen in the parent user view, child users cannot create, modify, or delete their fixed schedules.
-  \end{enumerate}
-  \item (Home appliance part) – Association with Styler: With regard to the child's fixed schedule, parents can choose whether to interwork with the Styler. If parent register the styler to the child’s fixed schedule, parent can easily use it by setting the appropriate styling of the clothes you need in advance the day before the child’s fixed schedule
+\item Parents who read the child's emotional analysis results and set a category for the child's current situation may feel at a confusion about what to do for their child. Therefore, on the parent solution page, parent can access audiobooks or related article materials containing stories that recommends parents how to cope with problems or situations related to their child's today’s keywords. Audio books and related materials can be accessed through AI speakers and the application. For example, in the application, if a parent sets the child's current situation category as "friend relationship concern" and clicks the ‘Browse solution’ button, the list of audiobooks which are related to the keyword "friend relationship" can be checked and the appropriate audiobook can be played through AI speakers. It is also possible to play the audiobook directly from the app's parent solution page. In addition, parent-user can check out a list of helpful articles on the parent solution page. Through these materials, parents can later organize their thoughts and build a bond by talking directly with their children.
+
+
+  \item (Home appliance part) – Parents can use customized home appliance services for each solution at the bottom of the solution page containing specific audiobook solution text. For example, if a parent user clicks on a 'study' solution category, he or she can use two home appliance services in this regard. First, based on the audiobook solution's advice that quiet environment is necessary for child when studying, the TV viewing time limit function can be used in the app. Also, parents can check the recommended dishes to help improve their child's concentration. Clicking on the tab for each dish takes the parent user to the page containing the recipe for that dish. This page also provides the ability to preheat the oven at home to suit the recipe of the dish that the parent user currently viewing in the application, if desired.
+  
 \end{enumerate}
 
 \section{Development Environment}
@@ -236,12 +232,25 @@ Parents who read the child's emotional analysis results and set a category for t
 \subsection{Cost}
 aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
 
+\subsection{Task distribution}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{m{3cm}|m{4cm}}
+    \toprule
+    Kim Seo Hyun & Front end and documentation \\
+    Kim Hyun Ji & Back end and documentation\\
+    Park Ji Won & Front end\\
+    Lee Su Bin & Backend and AI\\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
 \section{specifications}
 
 \subsection{Login}
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.3]{login_img.png}
+    \includegraphics[scale=0.1]{login_img.png}
     \end{figure}
     User must type his or her email address and corresponding password which were registered at sign up process. If email address or password is invalid, alert message informs user that wrong information has entered. This message is shown in space below the password input box. For a user who did not register yet, there is a button that enables him or her to go to the sign in page.
     
@@ -252,8 +261,8 @@ aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
     \end{enumerate}
     \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.3]{sign_up_1.png}
-    \includegraphics[scale=0.3]{sign_up_2.png}
+    \includegraphics[scale=0.1]{sign_up_1.png}
+    \includegraphics[scale=0.1]{sign_up_2.png}
     \end{figure}
     
     \subsection{Parent view}
@@ -265,16 +274,10 @@ aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
                 It intuitively informs parents of the child's feelings of today through the change in the expression of the child icon. However, if the child has not registered an answer yet, the child icon is set to a absence of expression. This is the same when the parent doesn’t register the question. This absence of expression is the default value, and when the child registers an answer, the expression of the icon changes according to the sentimental analysis of their answer. AI sentimental analysis is conducted based on the child's answer to reflect the child's emotion on the icon. Therefore, parents can easily realize the child's overall feelings through these changes. When a parent user clicks this icon, They can go to the daily Q\&A page.
                 \begin{figure}[H]
                  \centering
-                 \includegraphics[scale=0.3]{parent_main.png}
+                 \includegraphics[scale=0.1]{parent_main_1.png}
+                 \includegraphics[scale=0.1]{parent_main_2.png}
                  \end{figure}
                 
-                \item Daily schedule:
-                It informs parents user the child's daily schedule and notify whether it has been completed or not. The child's schedule for today is written in order, and user can know whether it is completed by check box. At this time, the parent user cannot select the checkbox. Parents can only see the schedule state and modify the weekly schedule information in schedule managing page. It depends on children user. When a child user informs the AI speaker his schedule state or select the checkbox directly in the application, parents user can check it in real time. \hfill \break
-                By clicking the Schedule component on the main page, the user can go to the schedule managing page. In this page, they can check, register, and modify the schedule information for each child.
-                \begin{figure}[H]
-                 \centering
-                 \includegraphics[scale=0.3]{parent_today_schedule.png}
-                 \end{figure}
                 \item Instructions:
                 Instructions guides the user action to be taken now. If a parent user has not registered today's question to the child, "Please register today's question" is set as a instruction. If they already have registered the question but the child has not yet answered it, "Answer has not yet been registered" is then set as a instruction. Finally, if the child registers an answer and the parent needs to check it, "Child answer is complete. Please check the solution" is set as a instructions. In this way, the instructions help guide the next behavior of the parent user.
                 \item Calendar button:
@@ -283,8 +286,6 @@ aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
                 This button is also located in the upper right corner of the main page. When the user clicks this button, they can go to My Page. This page helps user configuration. User can modify the password and check whether their application is linked to the child user.
             \end{enumerate}
             
-            
-            
             \item Q\&A \hfill \break
             In the main page in parent-user view, user can move to Q\&A page by clicking the child icon. On this page, parents can leave questions for the child and check the child's answer to the question.
             
@@ -292,12 +293,17 @@ aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
                 \item Question-Answer: If the parent view is in the initial state of not leaving any question for the child, a notice appears at the top of the screen asking for the parents to leave a question. If the parent-user clicks the pencil icon at the top right corner, the slide menu where he or she can create new question or modify the contents of questions that have already entered is activated. Modifying the content of existing question is possible only if the child has not yet entered to parent's answer. If the user clicks check button on the slide, modified/newly added text entered by the parent is stored. Afterwards, if the child leaves an answer to the question, the parent can check the child's answer directly below the question he or she left.
                  \begin{figure}[H]
                  \centering
-                 \includegraphics[scale=0.3]{parent_q&a_1.png}
-                 \includegraphics[scale=0.3]{parent_q&a_2.png}
+                 \includegraphics[scale=0.1]{parent_q&a_1.png}
+                 \includegraphics[scale=0.1]{parent_q&a_2.png}
                  \end{figure}
                 \item Sentimental analysis:
                 After the child leaves an answer, a window appears immediately below the answer as a result of sentimental analysis of the child's answer. Sentiment analysis is conducted through artificial intelligence Natural Language Processing. This allows parents to identify the percentage of their child's emotions (ex – 30\% for joy, 70\% for sadness). In addition, about the result of sentimental analysis, the emotion that accounts for the highest proportion is set as the child's representative emotion, and is reflected to the monthly child sentiment analysis page and "child" icon on the main page.
-                \item Child's Keywords / Solution Keywords: At the bottom of this page, 'Child's keywords' and 'Solution keywords' related to the child's answer are arranged. Child's keywords can be checked by parents in the form of hashtags. Keywords are extracted based on frequently mentioned words from the entire text of the child's answer. Solution keywords are provided by category related to the child's worries, such as academic problems or friendship. when a parent-user clicks each solution keyword, user moves to the solution page. \begin{figure}[H]
+                \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.2]{child_feeling.jpg}
+                 \end{figure}
+                \item Today's child vs Yesterday's child: At the bottom of this page, parents can see a graph comparing the child's emotional analysis results from the previous day and today's emotional analysis results. Through this graph, it is possible for the parents to conveniently grasp how their child's emotions have changed. In addition, if the parent user clicks the "Solution Review" button at the bottom, he or she will go to a page where the solution can be provided according to the category related to the child's worries.
+                \begin{figure}[H]
                  \centering
                  \includegraphics[scale=0.3]{parent_sentiment_analysis.png}
                  \end{figure}
@@ -312,33 +318,28 @@ aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
             This page is a solution page for parents. From the solution page, Parents who encounter a child's worries can get advice about parents' roles for helping their child to solve their problems.
             \begin{enumerate}
                 \item In application:
-                Parents who check the solution keyword on the Question \& Answer page, may click the keyword to go to the solution page corresponding to each keyword. For example, if parent-user click the 'Academic Problem' solution keyword, user will move to a page where he or she can check the audio-book channel and related journals containing advice on the role of parents in relation to the child's academic concerns. In this case, the phrase 'A child's academic problem-solving solution' is placed at the top of the page as title. Below it, icons that is linked to related audio-book pages and icons that is connected to links such as related journals and articles are arranged, respectively.
+                Parents who check the solution keyword on the Question \& Answer page, may click the keyword to go to the solution page corresponding to each keyword. For example, if parent-user click the 'Academic Problem' solution keyword, user will move to a page where he or she can check the audio-book channel and related journals containing advice on the role of parents in relation to the child's academic concerns. In this page, parents can access specific audiobook solutions related to their child's worries depending on the table of contents of the audiobook.
+                \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.1]{solution_category.png}
+                 \end{figure}
+                 \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.1]{audiobook_contents.png}
+                 \includegraphics[scale=0.1]{specific_audiobook.png}
+                 \end{figure}
+                 In addition, customized home appliance services for each solution are available at the bottom of the audiobook solution page. For example, if a parent clicks on a 'study' solution category, the parent can utilize two home appliance services in this regard. First, the parent user can use TV-viewing time limit function related to the audiobook solution's advices. In addition, parents can check the recommended dishes to help improve their child's concentration. Clicking on the tab for each dish takes the parent user to the page containing the recipe for that dish. This page also provides the ability to preheat the oven at home to suit the recipe of the dish the parent user are currently viewing in the application, if desired.
+                  \begin{figure}[H]
+                 \centering
+                 \includegraphics[scale=0.1]{appliance_oven1.png}
+                 \includegraphics[scale=0.1]{appliance_oven2.png}
+                 \end{figure}
                 \item AI speaker: Parent users can receive audiobook solutions through the interaction with AI speakers. In this case, user doesn't have to access the application. For example, when a user says, "Please play an audio book solution for my child's academic problem" to an AI speaker, it plays an audio book related to solution of child's academic problem.
-            \end{enumerate}
-            \item Schedule managing page \hfill \break
-            If you slide the child icon on the main page of the parent user view, you can see the child's schedule calendar for 'today'. By touching this calendar, the parents can move to the schedule managing page. When you go to this page, there is a table in the center of the screen where parents can see the child's week schedule at a glance. If the parent has not registered any schedule, there's no schedule block in the timetable. If parents want to register their child's schedule, they can click the 'plus' button in the upper right corner. Click this button to display a slide menu at the bottom for adding schedules. Parents can register their schedules through this menu. At this time, parents register the schedule by item, not by time and day. When parents complete weekly schedule registration, the schedule is also reflected not only to the timetable in schedule managing page, but also to the main page. After that, the main page guides them to their children and parents on "Today's To-Do list”
-            \begin{figure}[H]
+                 \begin{figure}[H]
                  \centering
-                 \includegraphics[scale=0.3]{parent_schedule_1.png}
+                 \includegraphics[scale=0.1]{AI_speaker_solution.png}
                  \end{figure}
-            \begin{enumerate}
-                \item Schedule block: It is easy to distinguish different schedules because each schedule item has it's own color. So, user can distinguish each schedule by the color. When a parent user clicks on a schedule block, a slide menu for modifying schedule information appears. The slide menu for modifying the schedule has the same format as the slide menu for registering schedule. If the parent user wants to delete a specific schedule block, click the trash can button at the top of the displayed slide menu. The child user cannot modify the schedule, but can check the details of the schedule when clicking on the block. In this case, the detailed information includes a schedule time, a place, and whether or not to be linked with the LG styler.
-                \item Slide menu: It appears at the bottom of the screen when the user clicks on a schedule block or 'plus' button. In this case, the slide menu does not occupy the entire screen, but it overlaps a certain portion of the schedule management page. This allows parent-user to register, modify, and delete schedules.
-                \begin{enumerate}
-                    \item When parent-user registers the child's schedule for the first time, \hfill \break
-                    User can access the slide menu for registering schedule through the plus button at the top of the fixed schedule managing page. As the first component of the slide menu, there is a text box that allows parent-user to write a name for the schedule. At the bottom, there is a time-add button. When the parent-user presses the time-add button, he or she may select the time to perform the schedule for each day of the week. Next, there is a text box for writing down the place, schedule name and time. However, the place is not the necessary input. User can skip it. But the time and name cannot be skipped. Finally, check whether the schedule requires interworking with the LG Styler. When this procedure is done, parent-user clicks the check button at the top of the slide menu to complete the schedule registration. After that, both parent-user and children-user can check the registered schedule on the timetable of the fixed-schedule managing page. But user cannot register more than one schedule for the same time zone. If user try it, a pop-up window appears informing to user that a new schedule cannot be registered because there is an existing schedule in that time zone.
-                    \item If parent-user modifies the registered schedule, \hfill \break
-                    User can access the slide menu for modifying existing schedule by clicking on the schedule block to be modified. The function works similarly to when registering a schedule. It means that slide menu for modifying schedule is almost same as one for registering schedule. The difference is that when user registers a new schedule, the empty text box will be filled, and when user modifies the registered schedule, the already filled text box will be replaced with another text content.
-                    \item If you delete a registered schedule, \hfill \break
-                    User may click the schedule block that he or she wants to delete. Then the slide menu for that schedule appears. When the user clicks on the Trash button at the top right of the slide menu, a pop-up window appears, with the phrase "Are you sure you want to delete the schedule?", and if the user clicks the OK button in the pop-up window, the schedule block disappears. This is also reflected to the weekly timetable in the fixed schedule managing page.
-                \end{enumerate}
             \end{enumerate}
-        \end{enumerate}
-        \begin{figure}[H]
-                 \centering
-                 \includegraphics[scale=0.3]{parent_schedule_2.png}
-                 \includegraphics[scale=0.3]{parent_schedule_3.png}
-                 \end{figure}
 
         \subsection{Child view}
         \begin{enumerate}
@@ -348,27 +349,26 @@ aws ec2 t2.micro: 0.0116 * 720(hour) = 8.352 dollars per month
                 \item When child-user successfully logged in, this page will firstly appear. In the today’s question section, which is shown to user first, child-user can look a question of parent. If there is no question arrived yet, icon and message appear at the page to inform user that there is no question. When there is a question registered, child-user can check it and go to answering page by clicking the button.
                 \begin{figure}[H]
                  \centering
-                 \includegraphics[scale=0.3]{child_main_1.png}
-                 \includegraphics[scale=0.3]{child_main_2.png}
+                 \includegraphics[scale=0.1]{child_main_1.png}
+                 \includegraphics[scale=0.1]{child_main_2.png}
                  \end{figure}
-                \item  Child-user can access to schedule page by clicking today’s schedule button. At the schedule page, child-user can check today’s schedule as to-do list. User also can put a check mark on those, but child-user cannot create, modify, or delete the schedule. If user clicks today’s schedule section, user can see his or her schedule as a timetable format. Child-user only can see it, not add, modify, or delete it.
-                 
-                 \centering
-                 \includegraphics[scale=0.3]{child_today_schedule.png}
                  
             \end{enumerate}
             \item Q\&A \hfill\break
             In this page, child-user can register his or her answer to the question. Child-user also can check today’s question above the input box for answering.
             \begin{figure}[H]
                  \centering
-                 \includegraphics[scale=0.3]{child_answer_1.png}
-                 \includegraphics[scale=0.3]{child_answer_2.png}
+                 \includegraphics[scale=0.2]{child_answer.jpg}
                  \end{figure}
             \item Monthly child sentiment analysis page \hfill \break
             If child-user clicks the calendar icon, user can see monthly sentiment analysis result. This page looks like calendar, and each box of date shows face icon which indicates that day’s result of sentiment analysis as an expression. By clicking the box, user can check that day’s sentiment analysis result.
         \end{enumerate}
+        \end{enumerate}
+        
+\section{Architecture Design \& Implementation}
+    \subsection{Overall architecture}
+    
+    
+
+    
 \end{document}
-
-
-
-
