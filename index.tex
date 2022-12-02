@@ -358,6 +358,10 @@ Question \& Answer between parents and child utilizes the format of chat. On the
                  \end{figure}
             \item Monthly child sentiment analysis page \hfill \break
             If child-user clicks the calendar icon, user can see monthly sentiment analysis result. This page looks like calendar, and each box of date shows face icon which indicates that day’s result of sentiment analysis as an expression. By clicking the box, user can check that day’s sentiment analysis result.
+            \begin{figure}[H]
+             \centering
+             \includegraphics[scale=0.28]{cal.png}
+             \end{figure}
         \end{enumerate}
         \end{enumerate}
 \newpage
@@ -623,13 +627,16 @@ When person who use Golden Child for the first time, login page will be shown at
 \begin{enumerate}
     \item Parent User
     \begin{enumerate}
+    
+        \item Use Case 1 
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{signup2.png}
         \includegraphics[scale=0.1]{signup3.png}
         \end{figure}
-        \item Use Case 1 
-        \\The user who downloaded this application inputs member information to complete the sign up process. In particular, a user type must be selected whether it is a child user or a parent user. And then the visible main page is changed accordingly. If user type is not selected, sign up process is not possible.
+        The user who downloaded this application inputs member information to complete the sign up process. In particular, a user type must be selected whether it is a child user or a parent user. And then the visible main page is changed accordingly. If user type is not selected, sign up process is not possible.
+        
+        \item Use Case 2
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{main1.png}
@@ -637,70 +644,86 @@ When person who use Golden Child for the first time, login page will be shown at
         \includegraphics[scale=0.1]{main2.png}
         \includegraphics[scale=0.1]{main3.png}
         \end{figure}
-        \item Use Case 2
-        \\On the main page, if Parent user have not already registered a question to the child, they will be asked to enter the question. And Parent user can see an expressionless child icon in the main page. If parent user register the question, the expression of the child icon changes according to the child's current feelings.
+        On the main page, if Parent user have not already registered a question to the child, they will be asked to enter the question. And Parent user can see an expressionless child icon in the main page. If parent user register the question, the expression of the child icon changes according to the child's current feelings.
+        
+        \item Use Case 3
         \begin{figure}[H]
          \centering
          \includegraphics[scale=0.1]{mon2.png}
          \includegraphics[scale=0.1]{mon1.png}
          \end{figure}
-        \item Use Case 3
-        \\Parent user can check the monthly sentimental analysis report by clicking the calendar icon on the main page. On the calendar, icons reflecting the emotions of the child day by day are displayed. This emotion is set as the representative emotion with the highest percentage of the child's emotion analysis results on the day.
+        Parent user can check the monthly sentimental analysis report by clicking the calendar icon on the main page. On the calendar, icons reflecting the emotions of the child day by day are displayed. This emotion is set as the representative emotion with the highest percentage of the child's emotion analysis results on the day.
+        \newpage
+        \item Use Case 4
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{q.png}
         \includegraphics[scale=0.1]{q1.png}
         \includegraphics[scale=0.1]{q2.png}
         \end{figure}
-        \item Use Case 4
-        \\If the parent user has not yet registered the question, click the Register Question button on the main page. When a parent completes the registration of a question, it goes through the alert window to confirm whether they really want to register the question.
+        If the parent user has not yet registered the question, click the Register Question button on the main page. When a parent completes the registration of a question, it goes through the alert window to confirm whether they really want to register the question.
+        \newpage
+        
+        \item Use Case 5
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{qa1.png}
         \end{figure}
-        \item Use Case 5
-        \\If the child user leaves an answer according to the question left by the parent, the sentimental analysis result of this answer is automatically displayed. Also, at the bottom of the screen, parent user can compare yesterday's child's feelings with today's feelings
+        If the child user leaves an answer according to the question left by the parent, the sentimental analysis result of this answer is automatically displayed. Also, at the bottom of the screen, parent user can compare yesterday's child's feelings with today's feelings
+        \newpage
+        \item Use Case 6
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{sc.png}
         \includegraphics[scale=0.1]{sc1.png}
         \includegraphics[scale=0.1]{sc3.png}
         \end{figure}
-        \item Use Case 6
-        \\If the child's emotions are negative and parenting coaching is needed for the answer, the parent user goes to the solution page by clicking the solution button. The content of this button changes according to the child's feelings. When parent users go to the solution page, they can first select the child's solution category and select contents of the specific audio book.
+        If the child's emotions are negative and parenting coaching is needed for the answer, the parent user goes to the solution page by clicking the solution button. The content of this button changes according to the child's feelings. When parent users go to the solution page, they can first select the child's solution category and select contents of the specific audio book.
+        \newpage
+    
+        \item Use Case 7
         \begin{figure}[H]
         \centering
-        \includegraphics[scale=0.1]{s.png}
         \includegraphics[scale=0.1]{s1.png}
-        \includegraphics[scale=0.1]{s3.png}
         \includegraphics[scale=0.1]{s2.png}
+        \includegraphics[scale=0.1]{s3.png}
         \includegraphics[scale=0.1]{s4.png}
         \end{figure}
-        \item Use Case 7
-        \\After the parent user checks the contents of the solution that fits the child's situation, there is a customized home appliance service tab at the bottom of the page. For example, if parent users select the study-related solution category, they can use the TV viewing restriction function to create a child's learning environment, and oven preheating function to make foods that enhance child’s concentration. The parent users may also browse the recipe for cooking the food. If they want to listen to this solution on their speaker right now, they can click on the headphone button in the header. If they want to listen later, click the 'Today’s Solution' button. Then, this solution becomes the 'Today’s solution', and the parent user can listen to this at any time through the AI speaker.
+        After the parent user checks the contents of the solution that fits the child's situation, there is a customized home appliance service tab at the bottom of the page. For example, if parent users select the study-related solution category, they can use the TV viewing restriction function to create a child's learning environment, and oven preheating function to make foods that enhance child’s concentration. The parent users may also browse the recipe for cooking the food.
+        
+        \newpage
+        \item Use Case 8
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{sc2.png}
         \includegraphics[scale=0.1]{sc4.png}
         \end{figure}
+        If they want to listen to this solution on their speaker right now, they can click on the headphone button in the header. If they want to listen later, click the 'Today’s Solution' button. Then, this solution becomes the 'Today’s solution', and the parent user can listen to this at any time through the AI speaker.    
+        
+        
     \end{enumerate}
     \newpage
+
+    
     \item Child User
     \begin{enumerate}
+        \item Use Case 1
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{ch1.png}
         \includegraphics[scale=0.1]{ch2.png}
         \end{figure}
-        \item Use Case 1 
-        \\If question has not yet registered from the parent user, the main page displays the phrase "The question has not arrived yet." Also, the leaves icon, not the love letter icon, is displayed. If a parent user registers a question, the love letter icon is displayed, and the contents of the parent's question can be shown. If child user want to register an answer that corresponds to the parent’s question, click the button at the bottom to move the page where child user can write an answer.
+        If question has not yet registered from the parent user, the main page displays the phrase "The question has not arrived yet." Also, the leaves icon, not the love letter icon, is displayed. If a parent user registers a question, the love letter icon is displayed, and the contents of the parent's question can be shown. If child user want to register an answer that corresponds to the parent’s question, click the button at the bottom to move the page where child user can write an answer.
+        \newpage
+        \item Use Case 2
         \begin{figure}[H]
          \centering
          \includegraphics[scale=0.1]{mon2.png}
          \includegraphics[scale=0.1]{mon1.png}
          \end{figure}
-        \item Use Case 2
-        \\Child user can check the monthly emotion analysis report by clicking the calendar icon on the main page. The calendar is marked with icons that reflect one's feelings day by day. This emotion is set as a representative emotion with the highest percentage of one's emotion analysis results on the day. This screen looks the same as when the user type is a parent.
+        Child user can check the monthly emotion analysis report by clicking the calendar icon on the main page. The calendar is marked with icons that reflect one's feelings day by day. This emotion is set as a representative emotion with the highest percentage of one's emotion analysis results on the day. This screen looks the same as when the user type is a parent.
+        \newpage
+        \item Use Case 3
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.1]{a.png}
@@ -708,10 +731,10 @@ When person who use Golden Child for the first time, login page will be shown at
         \includegraphics[scale=0.1]{a2.png}
         \includegraphics[scale=0.1]{a3.png}
         \end{figure}
-        \item Use Case 3
-        \\When the child user completes the registration of the answer corresponding to the parent's question, it goes through the confirmation process through the alert window. Then, the emotion analysis result for the answer is automatically displayed in the application.
+        When the child user completes the registration of the answer corresponding to the parent's question, it goes through the confirmation process through the alert window. Then, the emotion analysis result for the answer is automatically displayed in the application.
     \end{enumerate}
 \end{enumerate}
+\newpage
 \subsection{AI Speaker}
 \begin{enumerate}
     \item Use Case 1 
